@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Little World 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>♡ Our Little World ♡</h1>
+    <p>โลกใบเล็กของเราสองคน</p>
+  </header>
+
+  <nav>
+    <a href="#home">หน้าแรก</a>
+    <a href="#memories">ความทรงจำ</a>
+    <a href="#messages">ข้อความ</a>
+    <a href="#gallery">รูปของเรา</a>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="heart">♥</div>
+      <h2>Our Love Story</h2>
+      <p>ขอบคุณที่เข้ามาเป็นความสุขในทุกวัน 💗</p>
+
+      <div class="counter">
+        <h3>เราคบกันมาแล้ว</h3>
+        <div id="days">0</div>
+        <p>วัน</p>
+      </div>
+    </section>
+
+    <section id="memories" class="card">
+      <h2>🌷 ความทรงจำของเรา</h2>
+      <input id="memoryInput" placeholder="เขียนความทรงจำ...">
+      <button onclick="addMemory()">บันทึก</button>
+      <div id="memoryList"></div>
+    </section>
+
+    <section id="messages" class="card">
+      <h2>💌 ข้อความถึงกัน</h2>
+      <select id="sender">
+        <option>คนที่ 1</option>
+        <option>คนที่ 2</option>
+      </select>
+      <textarea id="messageInput" placeholder="เขียนข้อความถึงกัน..."></textarea>
+      <button onclick="addMessage()">ส่งข้อความ</button>
+      <div id="messageList"></div>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2>📸 รูปภาพของเรา</h2>
+      <input type="file" id="photoInput" accept="image/*" multiple>
+      <div id="galleryList" class="gallery"></div>
+    </section>
+
+    <section class="card surprise">
+      <h2>🎁 ข้อความพิเศษ</h2>
+      <button onclick="randomLove()">สุ่มข้อความบอกรัก</button>
+      <h3 id="surpriseText">💗 กดเพื่อเปิดข้อความ</h3>
+    </section>
+  </main>
+
+  <footer>Made with ♡ for us</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
