@@ -4,68 +4,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Little World 💗</title>
+  <title>To My Love 💗</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>♡ Our Little World ♡</h1>
-    <p>โลกใบเล็กของเราสองคน</p>
-  </header>
 
-  <nav>
-    <a href="#home">หน้าแรก</a>
-    <a href="#memories">ความทรงจำ</a>
-    <a href="#messages">ข้อความ</a>
-    <a href="#gallery">รูปของเรา</a>
-  </nav>
+<div class="hearts" id="hearts"></div>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="heart">♥</div>
-      <h2>Our Love Story</h2>
-      <p>ขอบคุณที่เข้ามาเป็นความสุขในทุกวัน 💗</p>
+<header>
+  <p>♡ A SPECIAL MESSAGE FOR YOU ♡</p>
+  <h1>To My Favorite Person</h1>
+  <p>เว็บไซต์เล็ก ๆ ที่สร้างขึ้นเพื่อเธอ</p>
+</header>
 
-      <div class="counter">
-        <h3>เราคบกันมาแล้ว</h3>
-        <div id="days">0</div>
-        <p>วัน</p>
-      </div>
-    </section>
+<main>
 
-    <section id="memories" class="card">
-      <h2>🌷 ความทรงจำของเรา</h2>
-      <input id="memoryInput" placeholder="เขียนความทรงจำ...">
-      <button onclick="addMemory()">บันทึก</button>
-      <div id="memoryList"></div>
-    </section>
+  <section class="hero">
+    <div class="big-heart">♥</div>
+    <h2>ถึงคนพิเศษของฉัน 💗</h2>
+    <p>รู้ไหมว่ามีคนคนหนึ่งคิดถึงเธออยู่เสมอ</p>
+    <button onclick="openLetter()">เปิดจดหมายของฉัน 💌</button>
+  </section>
 
-    <section id="messages" class="card">
-      <h2>💌 ข้อความถึงกัน</h2>
-      <select id="sender">
-        <option>คนที่ 1</option>
-        <option>คนที่ 2</option>
-      </select>
-      <textarea id="messageInput" placeholder="เขียนข้อความถึงกัน..."></textarea>
-      <button onclick="addMessage()">ส่งข้อความ</button>
-      <div id="messageList"></div>
-    </section>
+  <section class="letter" id="letter">
+    <div class="envelope">💌</div>
+    <h2>Dear My Love</h2>
+    <p>
+      ขอบคุณที่เข้ามาเป็นส่วนหนึ่งในชีวิตนะ<br>
+      ขอบคุณสำหรับรอยยิ้ม เสียงหัวเราะ<br>
+      และทุกช่วงเวลาที่เราได้อยู่ด้วยกัน<br><br>
+      ไม่รู้ว่าอนาคตจะเป็นอย่างไร<br>
+      แต่วันนี้อยากให้รู้ว่าเธอเป็นคนสำคัญมาก ๆ<br>
+      ขอให้เราได้สร้างความทรงจำดี ๆ ด้วยกันอีกเยอะเลยนะ<br><br>
+      รักเธอนะ ♡
+    </p>
+    <h3>With all my love 💗</h3>
+  </section>
 
-    <section id="gallery" class="card">
-      <h2>📸 รูปภาพของเรา</h2>
-      <input type="file" id="photoInput" accept="image/*" multiple>
-      <div id="galleryList" class="gallery"></div>
-    </section>
+  <section class="reason">
+    <h2>เหตุผลที่ฉันชอบเธอ 🌷</h2>
+    <div class="reason-list">
+      <div>♡ เพราะเธอเป็นเธอ</div>
+      <div>♡ เพราะเธอทำให้ยิ้มได้</div>
+      <div>♡ เพราะทุกวันมีความหมาย</div>
+      <div>♡ เพราะเธอเป็นคนพิเศษ</div>
+      <div>♡ เพราะฉันดีใจที่ได้รู้จักเธอ</div>
+    </div>
+  </section>
 
-    <section class="card surprise">
-      <h2>🎁 ข้อความพิเศษ</h2>
-      <button onclick="randomLove()">สุ่มข้อความบอกรัก</button>
-      <h3 id="surpriseText">💗 กดเพื่อเปิดข้อความ</h3>
-    </section>
-  </main>
+  <section class="surprise">
+    <h2>มีอะไรอยากบอกอีกนิด 🎁</h2>
+    <p>กดปุ่มด้านล่างเพื่ออ่านข้อความพิเศษ</p>
+    <button onclick="showLove()">กดตรงนี้สิ 💝</button>
+    <h3 id="loveText"></h3>
+  </section>
 
-  <footer>Made with ♡ for us</footer>
+  <section class="final">
+    <div class="big-heart">♥</div>
+    <h2>ขอบคุณที่เกิดมาให้รักนะ</h2>
+    <p>You're my favorite person. ♡</p>
+  </section>
 
-  <script src="script.js"></script>
+</main>
+
+<footer>
+  Made with love ♡ just for you
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
